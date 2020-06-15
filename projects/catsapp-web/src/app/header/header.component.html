@@ -22,9 +22,9 @@
         </mat-toolbar-row>
         <!--mat-toolbar-row displayed on Xs devices-->
         <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between center">
-            <button mat-button>About</button>
-            <button mat-button>Contact</button>
-            <button mat-button>Info</button>
+            <button mat-button [routerLink]="['about']">About</button>
+            <button mat-button [routerLink]="['contact']">Contact</button>
+            <button mat-button [routerLink]="['info']">Info</button>
         </mat-toolbar-row>
         <!---->
     </mat-toolbar>
