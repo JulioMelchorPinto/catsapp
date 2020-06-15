@@ -2,5 +2,130 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "catsapp-web": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "projects/catsapp-web",
+      "sourceRoot": "projects/catsapp-web/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/catsapp-web",
+            "index": "projects/catsapp-web/src/index.html",
+            "main": "projects/catsapp-web/src/main.ts",
+            "polyfills": "projects/catsapp-web/src/polyfills.ts",
+            "tsConfig": "projects/catsapp-web/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/catsapp-web/src/favicon.ico",
+              "projects/catsapp-web/src/assets"
+            ],
+            "styles": [
+              "projects/catsapp-web/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/catsapp-web/src/environments/environment.ts",
+                  "with": "projects/catsapp-web/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "catsapp-web:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "catsapp-web:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "catsapp-web:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/catsapp-web/src/test.ts",
+            "polyfills": "projects/catsapp-web/src/polyfills.ts",
+            "tsConfig": "projects/catsapp-web/tsconfig.spec.json",
+            "karmaConfig": "projects/catsapp-web/karma.conf.js",
+            "assets": [
+              "projects/catsapp-web/src/favicon.ico",
+              "projects/catsapp-web/src/assets"
+            ],
+            "styles": [
+              "projects/catsapp-web/src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/catsapp-web/tsconfig.app.json",
+              "projects/catsapp-web/tsconfig.spec.json",
+              "projects/catsapp-web/e2e/tsconfig.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/catsapp-web/e2e/protractor.conf.js",
+            "devServerTarget": "catsapp-web:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "catsapp-web:serve:production"
+            }
+          }
+        }
+      }
+    }},
+  "cli": {
+    "analytics": "183dbc85-db57-42d3-a5c1-f0e8eb2e9fc1"
+  },
+  "defaultProject": "catsapp-web"
 }
