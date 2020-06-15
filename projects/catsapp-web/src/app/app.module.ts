@@ -10,10 +10,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { WellcomeComponent } from './wellcome/wellcome.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutComponent } from './about/about.component';
 import { InfoComponent } from './info/info.component';
 import { ContactComponent } from './contact/contact.component';

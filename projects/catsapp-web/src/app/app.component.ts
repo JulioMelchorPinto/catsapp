@@ -8,7 +8,7 @@ import { MediaObserver, MediaChange } from '@angular/flex-layout';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
-    title = 'catsapp-web';
+    title = 'Catsapp';
     mediaSub: Subscription;
     deviceXs: boolean;
     constructor(public mediaObserver: MediaObserver) { }
@@ -17,8 +17,7 @@ export class AppComponent implements OnInit, OnDestroy {
             .subscribe((result: MediaChange) => {
                 console.log(result.mqAlias);
                 this.deviceXs = result.mqAlias === 'xs' ? true : false;
-            }
-            );
+            });
     }
     ngOnDestroy() { this.mediaSub.unsubscribe() }
 }

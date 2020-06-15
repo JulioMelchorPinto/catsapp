@@ -1,9 +1,9 @@
 <header>
-    <mat-toolbar color="primary">
+    <mat-toolbar [class.mat-elevation-z8]="true">
         <mat-toolbar-row fxLayoutAlign="space-between center">
             <div fxLayout="row">
                 <button mat-button class="brand" [routerLink]="['/']">
-                    <fa-icon [icon]="cat"></fa-icon>&nbsp;&nbsp;Catsapp
+                    <fa-icon [icon]="cat"></fa-icon>&nbsp;Catsapp
                 </button>
                 <!--buttons disappear on Xs devices-->
                 <div *ngIf="!deviceXs" fxLayout="row">
