@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { faCat } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-header',
@@ -7,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
     @Input() deviceXs: boolean;
+    cat = faCat;
 }

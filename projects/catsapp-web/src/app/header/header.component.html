@@ -2,12 +2,14 @@
     <mat-toolbar color="primary">
         <mat-toolbar-row fxLayoutAlign="space-between center">
             <div fxLayout="row">
-                <button mat-button class="brand" [routerLink]="['/basic']">Catsapp</button>
+                <button mat-button class="brand" [routerLink]="['/']">
+                    <fa-icon [icon]="cat"></fa-icon> Catsapp
+                </button>
                 <!--buttons disappear on Xs devices-->
                 <div *ngIf="!deviceXs" fxLayout="row">
-                    <button mat-button>About</button>
-                    <button mat-button>Contact</button>
-                    <button mat-button>Info</button>
+                    <button mat-button [routerLink]="['about']">About</button>
+                    <button mat-button [routerLink]="['contact']">Contact</button>
+                    <button mat-button [routerLink]="['info']">Info</button>
                 </div>
                 <!---->
             </div>
