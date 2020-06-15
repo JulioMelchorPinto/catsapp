@@ -28,6 +28,7 @@
               "projects/catsapp-web/src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/catsapp-web/src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +93,7 @@
               "projects/catsapp-web/src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/catsapp-web/src/styles.scss"
             ],
             "scripts": []
@@ -123,7 +125,8 @@
           }
         }
       }
-    }},
+    }
+  },
   "cli": {
     "analytics": "183dbc85-db57-42d3-a5c1-f0e8eb2e9fc1"
   },
