@@ -9,14 +9,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { WellcomeComponent } from './wellcome/wellcome.component';
-import { MatGridListModule } from '@angular/material/grid-list';
-import { MatCardModule } from '@angular/material/card';
-import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
     declarations: [
@@ -36,10 +32,6 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
         MatSidenavModule,
         FlexLayoutModule,
         LayoutModule,
-        MatListModule,
-        MatGridListModule,
-        MatCardModule,
-        DragDropModule
     ],
     providers: [],
     bootstrap: [
