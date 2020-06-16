@@ -25,6 +25,9 @@ import { ContactComponent } from './contact/contact.component';
 import { TableComponent } from './table/table.component';
 import { BreedsComponent } from './breeds/breeds.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SocialComponent } from './social/social.component';
+import { GliphyService } from './services/gliphy.service';
+import { GifComponent } from './gif/gif.component';
 
 
 
@@ -39,6 +42,8 @@ import { HttpClientModule } from '@angular/common/http';
         ContactComponent,
         TableComponent,
         BreedsComponent,
+        SocialComponent,
+        GifComponent,
     ],
     imports: [
         BrowserModule,
@@ -59,7 +64,7 @@ import { HttpClientModule } from '@angular/common/http';
         MatCardModule
 
     ],
-    providers: [],
+    providers: [GliphyService],
     bootstrap: [
         AppComponent
     ]

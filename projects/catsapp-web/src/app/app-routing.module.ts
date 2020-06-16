@@ -5,6 +5,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { InfoComponent } from './info/info.component';
 import { TableComponent } from './table/table.component';
+import { GifComponent } from './gif/gif.component';
 
 
 const routes: Routes = [
@@ -13,7 +14,7 @@ const routes: Routes = [
     { path: 'contact', component: ContactComponent },
     { path: 'info', component: InfoComponent },
     { path: 'breeds', component: TableComponent },
-
+    { path: 'gif', component: GifComponent },
 ];
 
 @NgModule({
