@@ -28,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SocialComponent } from './social/social.component';
 import { GliphyService } from './services/gliphy.service';
 import { GifComponent } from './gif/gif.component';
+import { GameComponent } from './game/game.component';
 
 
 
@@ -44,6 +45,7 @@ import { GifComponent } from './gif/gif.component';
         BreedsComponent,
         SocialComponent,
         GifComponent,
+        GameComponent,
     ],
     imports: [
         BrowserModule,
