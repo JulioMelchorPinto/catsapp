@@ -9,6 +9,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { MatCardModule } from "@angular/material/card";
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -18,6 +22,10 @@ import { WellcomeComponent } from './wellcome/wellcome.component';
 import { AboutComponent } from './about/about.component';
 import { InfoComponent } from './info/info.component';
 import { ContactComponent } from './contact/contact.component';
+import { TableComponent } from './table/table.component';
+import { BreedsComponent } from './breeds/breeds.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -29,9 +37,12 @@ import { ContactComponent } from './contact/contact.component';
         AboutComponent,
         InfoComponent,
         ContactComponent,
+        TableComponent,
+        BreedsComponent,
     ],
     imports: [
         BrowserModule,
+        HttpClientModule,
         AppRoutingModule,
         BrowserAnimationsModule,
         MatToolbarModule,
@@ -41,7 +52,12 @@ import { ContactComponent } from './contact/contact.component';
         MatSidenavModule,
         FlexLayoutModule,
         LayoutModule,
-        FontAwesomeModule
+        FontAwesomeModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatSortModule,
+        MatCardModule
+
     ],
     providers: [],
     bootstrap: [
