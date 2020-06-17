@@ -13,6 +13,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from "@angular/material/card";
+import { MatDialogModule } from "@angular/material/dialog";
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -20,7 +21,6 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { WellcomeComponent } from './wellcome/wellcome.component';
 import { TableComponent } from './table/table.component';
-import { BreedsComponent } from './breeds/breeds.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SocialComponent } from './social/social.component';
 import { GliphyService } from './services/gliphy.service';
@@ -38,12 +38,10 @@ import { MatGridListModule } from '@angular/material/grid-list';
         ContentComponent,
         WellcomeComponent,
         TableComponent,
-        BreedsComponent,
         SocialComponent,
         GifComponent,
         GameComponent,
-        FooterComponent,
-
+        FooterComponent
     ],
     imports: [
         BrowserModule,
@@ -62,8 +60,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
         MatPaginatorModule,
         MatSortModule,
         MatCardModule,
-        MatGridListModule
-
+        MatGridListModule,
+        MatDialogModule,
     ],
     providers: [GliphyService],
     bootstrap: [

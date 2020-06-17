@@ -2,7 +2,7 @@
     <label class="display-4">Cat in motion</label>
     <p class="mat-h1">Share cats on socials</p>
 </div>
-<div class="py-5 pl-5 pr-5">
+<div class="py-5 pl-5 pr-5" fxLayoutAlign="center">
     <div class="card-container" fxLayout="column">
         <div fxLayoutAlign="space-between">
             <div>
@@ -37,7 +37,7 @@
                 <img mat-card-image src={{recip.image_url}}>
             </mat-card-content>
             <mat-card-footer>
-                <a mat-button [href]="[recip.image_url]" [download]="['catsapp.gif']">
+                <a mat-button [href]="[recip.image_url]" [download]="['catsapp.gif']" target="_self">
                     Download GIF
                 </a>
             </mat-card-footer>

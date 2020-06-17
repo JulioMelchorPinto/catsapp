@@ -18,7 +18,7 @@ export class GifComponent implements OnInit {
             console.log(this.recip);
         });
     }
-    ngOnInit() {
+    async ngOnInit() {
         this.givemeGif();
     }
 
