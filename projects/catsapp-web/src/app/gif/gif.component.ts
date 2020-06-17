@@ -10,7 +10,7 @@ import { faFacebook, faTwitter, faInstagram, faWhatsapp } from "@fortawesome/fre
 })
 export class GifComponent implements OnInit {
     recip: DataGif;
-    facebook = faFacebook; twitter = faTwitter; instagram = faInstagram; whatsapp = faWhatsapp
+    facebook = faFacebook; twitter = faTwitter; instagram = faInstagram; whatsapp = faWhatsapp;
     constructor(private giphyService: GliphyService) { }
     givemeGif() {
         this.giphyService.getGif().subscribe((data: any) => {

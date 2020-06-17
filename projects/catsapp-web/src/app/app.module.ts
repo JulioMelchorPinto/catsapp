@@ -19,9 +19,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { WellcomeComponent } from './wellcome/wellcome.component';
-import { AboutComponent } from './about/about.component';
-import { InfoComponent } from './info/info.component';
-import { ContactComponent } from './contact/contact.component';
 import { TableComponent } from './table/table.component';
 import { BreedsComponent } from './breeds/breeds.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -29,6 +26,8 @@ import { SocialComponent } from './social/social.component';
 import { GliphyService } from './services/gliphy.service';
 import { GifComponent } from './gif/gif.component';
 import { GameComponent } from './game/game.component';
+import { FooterComponent } from './footer/footer.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 
@@ -38,14 +37,13 @@ import { GameComponent } from './game/game.component';
         HeaderComponent,
         ContentComponent,
         WellcomeComponent,
-        AboutComponent,
-        InfoComponent,
-        ContactComponent,
         TableComponent,
         BreedsComponent,
         SocialComponent,
         GifComponent,
         GameComponent,
+        FooterComponent,
+
     ],
     imports: [
         BrowserModule,
@@ -63,7 +61,8 @@ import { GameComponent } from './game/game.component';
         MatTableModule,
         MatPaginatorModule,
         MatSortModule,
-        MatCardModule
+        MatCardModule,
+        MatGridListModule
 
     ],
     providers: [GliphyService],

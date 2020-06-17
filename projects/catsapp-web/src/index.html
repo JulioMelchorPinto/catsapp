@@ -18,11 +18,23 @@
         <app-root></app-root>
     </div>
     <script src="assets/phaser.min.js"></script>
+    <script src="assets/gameJS/catch-the-cat.js"></script>
     <script>
         if (global === undefined) {
-          var global = window;
+            var global = window;
         }
-      </script>
+    </script>
+    <!-- <script>
+        window.game = new CatchTheCatGame({
+            w: 12,
+            h: 12,
+            r: 15,
+            backgroundColor: 0xfafafa,
+            parent: 'catch-the-cat',
+            statusBarAlign: 'center',
+            credit: '2020 Catsapp'
+        });
+    </script> -->
 </body>
 
 </html>

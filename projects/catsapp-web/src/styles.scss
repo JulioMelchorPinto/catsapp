@@ -5,6 +5,24 @@ body {
     height: 100%;
 }
 body {
+    padding: 0;
     margin: 0;
     font-family: "Roboto", sans-serif;
+}
+.app-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+app-header {
+    height: fit-content;
+    flex: 0 1 100%;
+}
+app-content {
+    flex: 1;
+    min-height: inherit;
+}
+app-footer {
+    height: fit-content;
+    flex: 0 1 100%;
 }
