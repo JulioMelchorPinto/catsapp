@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
     selector: 'app-wellcome',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
     styleUrls: ['./wellcome.component.scss'],
 })
 export class WellcomeComponent {
+    link = faExternalLinkAlt;
 
 }

@@ -18,5 +18,21 @@
         <app-root></app-root>
     </div>
 </body>
+<script src="assets/game/phaser.min.js"></script>
+<script src="assets/game/catch-the-cat.js"></script>
+<script>
+    function start() {
+        console.log('adentro!');
+        window.CatchTheCatGame = new CatchTheCatGame({
+            w: 12,
+            h: 12,
+            r: 12,
+            backgroundColor: 0xfafafa,
+            parent: 'catch-the-cat',
+            statusBarAlign: 'center',
+            credit: '2020 © Julio Melchor'
+        });
+    };
+</script>
 
 </html>

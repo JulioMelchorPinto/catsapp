@@ -11,9 +11,7 @@ const routes: Routes = [
     { path: 'breeds', component: TableComponent },
     { path: 'gif', component: GifComponent },
     { path: 'game', component: GameComponent },
-
 ];
-
 @NgModule({
     imports: [RouterModule.forRoot(routes)],
     exports: [RouterModule]

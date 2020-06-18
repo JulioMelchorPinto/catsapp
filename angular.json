@@ -33,6 +33,7 @@
                             "projects/catsapp-web/src/styles.scss"
                         ],
                         "scripts": [
+                            "projects/catsapp-web/src/assets/game/catch-the-cat.js",
                             "projects/catsapp-web/src/assets/game/phaser.min.js"
                         ]
                     },
@@ -101,6 +102,7 @@
                             "projects/catsapp-web/src/styles.scss"
                         ],
                         "scripts": [
+                            "projects/catsapp-web/src/assets/game/catch-the-cat.js",
                             "projects/catsapp-web/src/assets/game/phaser.min.js"
                         ]
                     }
