@@ -13,10 +13,12 @@
                 </div>
                 <!---->
             </div>
-            <div>
-                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"
-                    fxLayoutAlign="end">
-                    <mat-icon>more_vert</mat-icon>
+            <div fxLayout="row">
+                <button mat-icon-button [matMenuTriggerFor]="langs" aria-label="Example icon-button with a menu">
+                    <fa-icon [icon]="lang" size="lg"></fa-icon>
+                </button>
+                <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                    <fa-icon [icon]="dots" size="lg"></fa-icon>
                 </button>
             </div>
         </mat-toolbar-row>
@@ -32,6 +34,14 @@
     <mat-menu #menu="matMenu" fxLayoutAlign="end">
         <button mat-menu-item>Item 1</button>
         <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <mat-menu #langs="matMenu" fxLayoutAlign="end">
+        <button mat-menu-item>
+            <mat-icon svgIcon="es" aria-hidden="false" aria-label="español flag icon"></mat-icon> Espa&ntilde;ol
+        </button>
+        <button mat-menu-item>
+            <mat-icon svgIcon="en" aria-hidden="false" aria-label="english flag icon"></mat-icon> English
+        </button>
     </mat-menu>
     <!---->
 </header>

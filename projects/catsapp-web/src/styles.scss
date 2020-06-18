@@ -16,16 +16,3 @@ body {
     display: flex;
     flex-flow: row wrap;
 }
-
-app-header {
-    height: fit-content;
-    flex: 0 1 100%;
-}
-app-content {
-    flex: 1;
-    min-height: inherit;
-}
-app-footer {
-    height: fit-content;
-    flex: 0 1 100%;
-}

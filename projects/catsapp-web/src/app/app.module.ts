@@ -14,6 +14,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatCardModule } from "@angular/material/card";
 import { MatDialogModule } from "@angular/material/dialog";
+
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -61,7 +62,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
         MatSortModule,
         MatCardModule,
         MatGridListModule,
-        MatDialogModule,
+        MatDialogModule
     ],
     providers: [GliphyService],
     bootstrap: [
